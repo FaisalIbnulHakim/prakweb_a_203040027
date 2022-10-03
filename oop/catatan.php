@@ -1,6 +1,6 @@
 <?php
 /*  
-    #video 1
+    #video 2
     Class
     -class template untuk membuat instance dari object
     -class mendefinisikan object
@@ -11,7 +11,7 @@
     untuk menyimpan property dan method
     -aturan penamaan class sama seperti variable
 
-    #video 2
+    #video 3
     Property
     - mempresentasikan data / keadaan dari sebuah object
     - variabel yang ada di dalam object (member variable)
@@ -36,17 +36,23 @@
     - belokKiri
     - belokKanan
 
-    #video 3
+    #video 4
     Constructor
     - metode khusus yang akan dijalankan secara otomatis setiap kita membuat intance sebuah kelas
 
-    #video 4
+    #video 5
     Object Type
     menggunakan object sebagai tipe data untuk
+
+    #video 6
+    inheritance
+    - Menciptakan hierarki antar kelas(Parent&child)
+    - Child class, mewarisi semua properti dan method dari parent nya (yang visible)
+    - Child class, memperluas (extends) fungsionalitas dari parent-nya
 */
 ?>
 <?php
-#video 1
+#video 2
 // contoh class
 class tes
 {
@@ -64,7 +70,7 @@ class tes
 ?>
 
 <?php
-#video 2
+#video 3
 // contoh object
 class Coba
 {
