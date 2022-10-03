@@ -49,6 +49,9 @@
     - Menciptakan hierarki antar kelas(Parent&child)
     - Child class, mewarisi semua properti dan method dari parent nya (yang visible)
     - Child class, memperluas (extends) fungsionalitas dari parent-nya
+
+    #video 7
+    Inheritance lanjutan
 */
 ?>
 <?php
@@ -100,3 +103,35 @@ class Mobil
     }
 }
 ?>
+<?php
+/*
+    Inheritance lanjutan
+*/
+
+class Mobil1
+{
+    public  $nama, $merk, $warna,
+        $kecepatanMaksimal,
+        $jumlahPenumpang;
+
+    public function tambahKecepatan()
+    {
+        return "Kecepatan bertambah!";
+    }
+}
+
+class MobilSport extends Mobil1
+{
+    public $turbo = false;
+
+    public function jalankanTurbo()
+    {
+        $this->turbo = true;
+        return "turbo dijalankan!";
+    }
+}
+
+$mobil1 = new MobilSport();
+echo $mobil1->tambahKecepatan();
+echo "<br>";
+echo $mobil1->jalankanTurbo();
