@@ -39,6 +39,10 @@
     #video 3
     Constructor
     - metode khusus yang akan dijalankan secara otomatis setiap kita membuat intance sebuah kelas
+
+    #video 4
+    Object Type
+    menggunakan object sebagai tipe data untuk
 */
 ?>
 <?php
