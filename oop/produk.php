@@ -7,11 +7,18 @@
 
 class Produk
 {
-  public $judul = "judul",
-    $penulis = "penulis",
-    $penerbit = "penerbit",
-    $harga = "0";
+  public $judul,
+    $penulis,
+    $penerbit,
+    $harga;
 
+  public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0)
+  {
+    $this->judul = $judul;
+    $this->penulis = $penulis;
+    $this->penerbit = $penerbit;
+    $this->harga = $harga;
+  }
   public function getLabel()
   {
     return "$this->judul,$this->penulis,$this->penerbit,$this->harga";
@@ -30,7 +37,7 @@ var_dump($produk2);
 $produk3 = new Produk();
 $produk3->judul = "Naruto";
 $produk3->penulis = "Masashi Kishimoto";
-$produk3->penerbit = "Shueisha";
+$produk3->penerbit = "Shounen Jump";
 $produk3->harga = 30000;
 
 $produk4 = new Produk();

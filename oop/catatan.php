@@ -11,7 +11,7 @@
     untuk menyimpan property dan method
     -aturan penamaan class sama seperti variable
 
-    #video2
+    #video 2
     Property
     - mempresentasikan data / keadaan dari sebuah object
     - variabel yang ada di dalam object (member variable)
@@ -35,6 +35,10 @@
     - gantiTransmisi
     - belokKiri
     - belokKanan
+
+    #video 3
+    Constructor
+    - metode khusus yang akan dijalankan secara otomatis setiap kita membuat intance sebuah kelas
 */
 ?>
 <?php
