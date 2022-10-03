@@ -10,10 +10,11 @@ $buku = query("SELECT * FROM buku");
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
   <title>Buku Online</title>
 </head>
 
-<body class="dark:bg-gray-500">
+<body>
 
   <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-700">
     <div class="container flex flex-wrap justify-between items-center mx-auto" bis_skin_checked="1">
@@ -23,7 +24,7 @@ $buku = query("SELECT * FROM buku");
       </div>
     </div>
   </nav>
-  <div class="w-full dark:bg-gray-500">
+  <div class="w-full ">
     <div class="container">
       <div class="w-full pl-16 lg:pl-72 lg:pr-12 mt-8 grid sm:grid-cols-1 lg:grid-cols-4 gap-12 gap-x-52">
         <?php foreach ($buku as $bk) : ?>
