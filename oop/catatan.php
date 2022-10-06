@@ -122,7 +122,19 @@
 
     #video 14
     abstarct class bagian 2
-  lanjut ke studi kasus produk
+    lanjut ke studi kasus produk
+
+    #video 15
+    interface 1
+    - Kelas abstrak yang sama sekali tidak memiliki implementasi
+    - murni template untuk kelas turunannya
+    - tidak boleh memiliki property, hanya deklarasi method saja
+    - semua method harus dideklarasikan dengan visibilty public
+    - bileh mendeklarasikan __construct()
+    - satu kelas bolej mengimplementasikan banyak interface
+    interface 2
+    - dengan menggunakan type-hinting dapat melakukan 'dependency injection'
+    - opada akhirnya akan mencapai polmorphism
 */
 ?>
 <?php
@@ -209,6 +221,7 @@ echo $mobil1->jalankanTurbo();
 ?>
 
 <?php
+/*
 // abstract class
 abstract class Buah
 {
@@ -235,6 +248,52 @@ class Jeruk extends Buah
     {
         // kupas
         // makan satu satu
+    }
+}
+*/
+?>
+
+<?php
+interface Buah
+{
+    public function makan();
+    public function setWarna($warna);
+}
+
+interface Benda
+{
+    public function setUkuran($ukuran);
+}
+
+class Apel implements Buah, Benda
+{
+    protected $warna;
+    public function makan()
+    {
+        // kupas
+        // makan tengah
+    }
+    public function setWarna($warna)
+    {
+        $this->warna = $warna;
+    }
+    public function setUkuran($ukuran)
+    {
+        $this->ukuran = $ukuran;
+    }
+}
+
+class Jeruk implements Buah
+{
+    protected $warna;
+    public function makan()
+    {
+        // kupas
+        // makan satu satu
+    }
+    public function setWarna($warna)
+    {
+        $this->warna = $warna;
     }
 }
 ?>
