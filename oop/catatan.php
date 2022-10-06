@@ -135,6 +135,17 @@
     interface 2
     - dengan menggunakan type-hinting dapat melakukan 'dependency injection'
     - opada akhirnya akan mencapai polmorphism
+
+    #video 16
+    Autoloading
+
+    #video 17
+    Namaspace
+    sebuah cara untuk mengelompokan program ke dalam sebuah package tersendiri (encapsulation)
+    PHP tidak mengijinkan kita untuk memiliki 2 Class dengan nama yang sama
+    penulisan
+    namespace Vendor\Namespace\SubNamespace
+
 */
 ?>
 <?php
