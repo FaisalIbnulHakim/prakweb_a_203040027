@@ -88,7 +88,7 @@
     Merupakan sebuah identifier untuk menyimpan nilai (nilai nya tidak dapat berubah)
 
     cara membuat nya
-    - defint() tidak bisa diakses di dalam class 
+    - define() tidak bisa diakses di dalam class 
     - const bisa diakses di dalam class
 
     Magic Constant
@@ -100,6 +100,25 @@
     - __TRAIT__
     - __METHOD__
     - __NAMESPACE__
+
+    #video 13
+    Abstract Class 1
+    - sebuah keals yang tidak dapat di instansiasi
+    - kelas abstrak
+    - mendefinisikan interface untuk kelas lain yang menjadi turunannya
+    - berperan sebagai kerangka dasar untuk kelas turunnannya
+    - memiliki minimal 1 method abstrak
+    - digunakan dalam pewarisan / inheritance untuk memaksakan implementasi method abstrak yang sama untuk semua kelas turunannya
+    Abstract Class 2
+    - Semua kelas turunan, harus mengimplementasikan method abstrack yang ada di kelas abstraknya
+    - kelas abstrak boleh memiliki property / method reguler
+    - kelas abstrak boleh memiliki property / static method
+    kenapa?
+    - merepresentasikan ide atau konsep dasar
+    - composition over inheritance
+    - salah saatu cara menerapkan polimorphism
+    - sentralisasi logic
+    - mempermudah pengerjaan tim
 */
 ?>
 <?php
@@ -183,3 +202,35 @@ $mobil1 = new MobilSport();
 echo $mobil1->tambahKecepatan();
 echo "<br>";
 echo $mobil1->jalankanTurbo();
+?>
+
+<?php
+// abstract class
+abstract class Buah
+{
+    private $warna;
+    abstract public function makan();
+    public function setWarnaa($warna)
+    {
+        $this->warna = $warna;
+    }
+}
+
+class Apel extends Buah
+{
+    public function makan()
+    {
+        // kupas
+        // makan tengah
+    }
+}
+
+class Jeruk extends Buah
+{
+    public function makan()
+    {
+        // kupas
+        // makan satu satu
+    }
+}
+?>
