@@ -119,6 +119,10 @@
     - salah saatu cara menerapkan polimorphism
     - sentralisasi logic
     - mempermudah pengerjaan tim
+
+    #video 14
+    abstarct class bagian 2
+  lanjut ke studi kasus produk
 */
 ?>
 <?php
