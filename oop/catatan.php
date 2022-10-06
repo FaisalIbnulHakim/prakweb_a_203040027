@@ -68,6 +68,9 @@
     - Hanya memperlihatkan aspek dari class yang dibutuhkan
     - Menentukan kebutuhan yang jelas untuk object
     - Memberikan kendali pada kode untuk menghindari 'bug'
+
+    #video 10
+    Accessor Methods (Setters & Getters)
 */
 ?>
 <?php
